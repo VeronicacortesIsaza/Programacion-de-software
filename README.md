@@ -1,46 +1,34 @@
-# Curso de Programación de Software
+# 📘 Pydantic
 
-## Descripción del Curso
-Material completo del curso de Programación de Software organizado por módulos para facilitar el aprendizaje. Cada módulo incluye teoría detallada, ejemplos prácticos, ejercicios resueltos y casos de uso del mundo real.
+Pydantic es una **biblioteca de Python** para **validar datos** y realizar **conversiones de tipo** usando *type hints*.  
+Permite definir **esquemas de datos** como clases con atributos tipados, donde automáticamente se validan y convierten los datos al tipo correcto.  
 
-## Estructura del Curso
-
-### [Módulo 1: Introducción a POO en Python](./01-Introduccion-POO-Python/)
-- **Teoría completa** con analogías del mundo real
-- **Conceptos fundamentales**: Clases, objetos, atributos, métodos
-- **Principios POO**: Encapsulación, herencia, polimorfismo
-- **Sistema completo** de gestión de vehículos
-- **Ejercicios prácticos** con soluciones detalladas
-- **Ejemplos ejecutables** paso a paso
-
-## Docente
-**Alejandro Salgar Marín**  
-Instituto Tecnológico Metropolitano (ITM)  
-Período Académico: 2025-2
-
-## Cómo Usar Este Repositorio
-
-### **Para Estudiantes:**
-1. **Clona el repositorio**: `git clone [URL]`
-2. **Navega por módulos**: Comienza con el Módulo 1 y avanza secuencialmente
-3. **Ejecuta ejemplos**: Cada módulo incluye código ejecutable
-4. **Practica ejercicios**: Resuelve los ejercicios antes de ver las soluciones
-5. **Experimenta**: Modifica el código y observa los cambios
-
-### **Para Instructores:**
-- **Material listo para usar**: Cada módulo está completo y autocontenido
-- **Ejercicios graduados**: Dificultad progresiva desde básico hasta avanzado
-- **Casos de uso reales**: Ejemplos aplicables a situaciones del mundo real
-- **Flexibilidad**: Fácil de adaptar a diferentes estilos de enseñanza
-
-## Características del Curso
-
-- **Teoría Sólida**: Explicaciones claras con analogías del mundo real
-- **Código Ejecutable**: Ejemplos que puedes correr y modificar
-- **Ejercicios Prácticos**: Problemas reales con soluciones detalladas
-- **Proyectos Completos**: Sistemas que integran múltiples conceptos
-- **Documentación Clara**: Explicaciones paso a paso para cada concepto
+Es muy popular en el desarrollo de **APIs con FastAPI**, ya que este framework lo utiliza nativamente para definir modelos de datos.
 
 ---
 
-*¡Bienvenidos al mundo de la programación! Este curso te llevará desde los fundamentos hasta la creación de aplicaciones complejas.*
+## 🚀 Beneficios principales
+
+### ✅ Validación de datos
+- Garantiza que los datos recibidos cumplan con un esquema definido.  
+- Evita errores comunes al recibir información inválida.  
+
+### 🔄 Conversión automática de tipos
+- Convierte datos de entrada al tipo correcto siempre que sea posible.  
+- Ejemplo: convertir `"123"` en `int(123)`.  
+
+### 📖 Documentación de API
+- Facilita la documentación automática de APIs al integrarse con FastAPI.  
+
+### 🏗️ Modelos de datos claros
+- Define la estructura de datos de forma limpia y concisa.  
+
+---
+
+## ✨ Ventajas de usar Pydantic
+
+- 🧹 **Código más limpio:** elimina la necesidad de múltiples `if isinstance()` o validaciones manuales.  
+- 🔒 **Mayor seguridad:** evita errores relacionados con datos inválidos.  
+- ⚡ **Desarrollo rápido:** la validación y conversión automática agilizan el trabajo.  
+- 🖊️ **Sintaxis intuitiva:** fácil de leer y mantener.  
+- 🔗 **Integración con FastAPI:** hace que crear APIs sea sencillo, robusto y bien documentado.  
