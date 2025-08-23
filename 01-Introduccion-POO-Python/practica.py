@@ -10,7 +10,7 @@ class CuentaBancaria:
     def __init__(self, titutar: Persona, saldo: int = 0):
         self.titutar = titutar
         self._saldo = saldo
-         
+
     def saldo(self) -> int:
         return self._saldo
     
@@ -27,11 +27,8 @@ class CuentaBancaria:
             print(f"Se retira del saldo {self._saldo} el monto de {monto}")
         else:
             print(f"no se puede retirar un monto mayor al saldo de la cuenta")
-
     def __str__(self) -> str:
         return f"Cuenta de {self.titutar.nombre} - Documento: {self.titutar.documento} - Saldo: ${self._saldo}"
-
-        
 class CuentaAhorro(CuentaBancaria):
     def __init__(self, titular, saldo = 0, interes: float = 0.02):
         super().__init__(titular, saldo)
@@ -76,6 +73,7 @@ class Banco:
         else:
             for i, cuenta in enumerate(self.cuentas, 1):
                 print(f"{i}.{cuenta}")
+
 
 
 
@@ -158,3 +156,7 @@ while True:
         break
     else:
         print("Opcion no valida")
+
+
+# terminar todas las opciones que son 2, 3, 4, ajustar la 5 para que imprima el objeto y no la referencia de memoria
+# Validar que todos los input sean del valor deseado, mostrando errores por consola sin try catch
