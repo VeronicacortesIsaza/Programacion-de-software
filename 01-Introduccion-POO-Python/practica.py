@@ -4,8 +4,7 @@ class Persona:
         self.documento = documento
 
     def __str__(self) -> str:
-        return f"{self.nombre}, se creo esta persona con el documneto {self.documento}"
-    
+        return f"{self.nombre}, se creo esta persona con el documneto {self.documento}"  
 class CuentaBancaria:
     def __init__(self, titutar: Persona, saldo: int = 0):
         self.titutar = titutar
@@ -39,7 +38,6 @@ class CuentaAhorro(CuentaBancaria):
         self._saldo += ganancia
         print(f"interes aplicado y su nuevo saldo es {self._saldo}")
 
-
 class CuentaCorriente(CuentaBancaria):
     def __init__(self, titular, saldo = 0, limite_de_sobregiro: float = 500):
         super().__init__(titular, saldo)
@@ -51,7 +49,6 @@ class CuentaCorriente(CuentaBancaria):
             print(f"Se retira del saldo {self._saldo} el monto de {monto}")
         else:
             print(f"no se puede retirar un monto mayor al saldo de la cuenta")
-
 
 class Banco:
     def __init__(self, nombre: str):
@@ -73,9 +70,6 @@ class Banco:
         else:
             for i, cuenta in enumerate(self.cuentas, 1):
                 print(f"{i}.{cuenta}")
-
-
-
 
 banco = Banco(nombre="Banco ITM")
 while True:
@@ -104,8 +98,8 @@ while True:
         
         while True:
             print("\nQue tipo de cuenta quiere crear")
-            tipo = input("Escriba ahorros o corriente ").lower().strip()
-            if tipo in ["ahorros", "corriente"]:
+            tipo = input("Escriba ahorro o corriente ").lower().strip()
+            if tipo in ["ahorro", "corriente"]:
                 banco.crear_cuentar(persona,tipo)
                 break
             else:
@@ -156,7 +150,3 @@ while True:
         break
     else:
         print("Opcion no valida")
-
-
-# terminar todas las opciones que son 2, 3, 4, ajustar la 5 para que imprima el objeto y no la referencia de memoria
-# Validar que todos los input sean del valor deseado, mostrando errores por consola sin try catch
